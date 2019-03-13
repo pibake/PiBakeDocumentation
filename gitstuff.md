@@ -12,7 +12,7 @@ Once you have installed `git`, press the Super (Windows) key, type git and you'l
 If you're on Ubuntu Linux, type the following:<br>
 `sudo apt install git`
 
-If you're on macOS, install the Homebrew package manager and install git that way. This is needed for automatic updates to git without having to go grab it from the website.
+If you're on macOS, install the Homebrew package manager and install git that way. This is needed for automatic updates to `git` without having to go grab it from the website.
 
 If the installation had no errors, type:<br>
 `git --version` to see the version and check if `git` is installed.
@@ -22,10 +22,12 @@ If the installation had no errors, type:<br>
 To clone a repo, type the following:<br>
 `git clone https://web/address/to/git/repo`
 
-This will clone the `master` branch of the repository you entered to your local machine. This repository is your working directory. Remeber this because the phrase will come up plater in the documentation. If you want to clone a different brach to your local machine, type the following:<br>
+This will clone the `master` branch of the repository you entered to your local machine. This repository is your working directory for your repository. Remeber this because the phrase will come up later in the documentation. If you want to clone a different brach to your local machine, type the following:<br>
 `git clone https://web/address/to/git/repo -b branch_name`
 
 Note that `branch_name` can be whatever your branch name is.
+
+If you haven't already, change your current directory to the directory you just cloned.
 
 ## Craft your own branch (optional)
 
