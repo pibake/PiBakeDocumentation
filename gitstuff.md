@@ -64,3 +64,14 @@ If you have a branch that you have created yourself, type the following instead:
 `git push -u origin branch_name`
 
 Note that `branch_name` can be whatever your branch name is.
+
+## Back to the Future
+
+If you have to go back commits, it's really simple! To go back to only fiddle around with previous commits, type:<br>
+`git checkout commit`
+
+Better yet, if you have to go back, create a branch. That way, you'll always a place to go back to whenever you made a breaking change. Type:<br>
+`git checkout -b commit`
+
+Note that `commit` is the the alphanumeric string of characters that's on your commit. You can find these by typing:<br>
+`git log` or `git log -n 5` to check the five latest commits on your current branch.
