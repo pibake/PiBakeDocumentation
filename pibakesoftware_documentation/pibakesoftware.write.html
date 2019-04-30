@@ -1,0 +1,81 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module pibakesoftware.write</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="pibakesoftware.html"><font color="#ffffff">pibakesoftware</font></a>.write</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/wyatt/Source/PiBakeSoftware/pibakesoftware/write.py">/home/wyatt/Source/PiBakeSoftware/pibakesoftware/write.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;Python&nbsp;file&nbsp;for&nbsp;writing&nbsp;data&nbsp;to&nbsp;config&nbsp;file<br>
+#&nbsp;Written&nbsp;by&nbsp;Wyatt&nbsp;J.&nbsp;Miller,&nbsp;2019</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="posixpath.html">posixpath</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="pibakesoftware.write.html#Write">Write</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Write">class <strong>Write</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Synopsis:<br>
+Class&nbsp;to&nbsp;serialize&nbsp;the&nbsp;temperature&nbsp;data<br>
+&nbsp;<br>
+Details:<br>
+Class&nbsp;used&nbsp;to&nbsp;serialize&nbsp;(or&nbsp;write)&nbsp;the&nbsp;temperature&nbsp;model&nbsp;to&nbsp;a&nbsp;specified<br>
+format&nbsp;i.e.&nbsp;JSON.&nbsp;More&nbsp;are&nbsp;soon&nbsp;to&nbsp;come&nbsp;later&nbsp;on&nbsp;i.e.&nbsp;YAML,&nbsp;TOML,&nbsp;etc.<br>
+Please&nbsp;specify&nbsp;what&nbsp;kind&nbsp;of&nbsp;serialized&nbsp;formats&nbsp;you&nbsp;would&nbsp;like&nbsp;in&nbsp;<br>
+PiBakeSoftware's&nbsp;Issues&nbsp;repository.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Write-__init__"><strong>__init__</strong></a>(self, inputs, file<font color="#909090">='export.json'</font>, encoding<font color="#909090">='json'</font>)</dt><dd><tt>Synopsis:<br>
+Writing&nbsp;constructor<br>
+&nbsp;<br>
+Details:<br>
+Instantiates&nbsp;the&nbsp;file,&nbsp;input&nbsp;(from&nbsp;temperature&nbsp;model),&nbsp;and&nbsp;encoding&nbsp;attributes</tt></dd></dl>
+
+<dl><dt><a name="Write-create_file"><strong>create_file</strong></a>(self)</dt><dd><tt>Synopsis:<br>
+Create&nbsp;file&nbsp;method<br>
+&nbsp;<br>
+Details:<br>
+It's&nbsp;a&nbsp;method&nbsp;that&nbsp;takes&nbsp;the&nbsp;file&nbsp;attribute&nbsp;of&nbsp;this<br>
+class&nbsp;and&nbsp;makes&nbsp;a&nbsp;node&nbsp;(a.k.a&nbsp;a&nbsp;file)&nbsp;of&nbsp;that&nbsp;attribute&nbsp;in<br>
+the&nbsp;current&nbsp;directory</tt></dd></dl>
+
+<dl><dt><a name="Write-delete_file"><strong>delete_file</strong></a>(self)</dt><dd><tt>Method&nbsp;to&nbsp;delete&nbsp;the&nbsp;file&nbsp;attribute</tt></dd></dl>
+
+<dl><dt><a name="Write-does_file_exist"><strong>does_file_exist</strong></a>(self)</dt><dd><tt>Synopsis:<br>
+Method&nbsp;to&nbsp;check&nbsp;if&nbsp;the&nbsp;file&nbsp;exists<br>
+&nbsp;<br>
+Details:<br>
+It's&nbsp;a&nbsp;method&nbsp;that&nbsp;checks&nbsp;if&nbsp;a&nbsp;file&nbsp;is&nbsp;found&nbsp;using&nbsp;the<br>
+file&nbsp;attribute&nbsp;and&nbsp;takes&nbsp;the&nbsp;result&nbsp;of&nbsp;that&nbsp;and&nbsp;does<br>
+the&nbsp;appropriate&nbsp;actions.</tt></dd></dl>
+
+<dl><dt><a name="Write-to_json"><strong>to_json</strong></a>(self, inputs)</dt><dd><tt>Method&nbsp;to&nbsp;write&nbsp;to&nbsp;JSON</tt></dd></dl>
+
+<dl><dt><a name="Write-write_to_json"><strong>write_to_json</strong></a>(self)</dt><dd><tt>Method&nbsp;to&nbsp;combine&nbsp;all&nbsp;of&nbsp;the&nbsp;following&nbsp;functions</tt></dd></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
